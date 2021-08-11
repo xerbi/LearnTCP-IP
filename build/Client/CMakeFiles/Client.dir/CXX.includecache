@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/andrey/worckSpace/LearnTCP-IP/Client/clientMain.cpp
+iostream
+-
+cstring
+-
+sys/socket.h
+-
+sys/types.h
+-
+stdio.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+

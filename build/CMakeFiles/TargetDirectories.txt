@@ -1,0 +1,8 @@
+/home/andrey/worckSpace/LearnTCP-IP/build/CMakeFiles/rebuild_cache.dir
+/home/andrey/worckSpace/LearnTCP-IP/build/CMakeFiles/edit_cache.dir
+/home/andrey/worckSpace/LearnTCP-IP/build/Client/CMakeFiles/rebuild_cache.dir
+/home/andrey/worckSpace/LearnTCP-IP/build/Client/CMakeFiles/edit_cache.dir
+/home/andrey/worckSpace/LearnTCP-IP/build/Client/CMakeFiles/Client.dir
+/home/andrey/worckSpace/LearnTCP-IP/build/Server/CMakeFiles/rebuild_cache.dir
+/home/andrey/worckSpace/LearnTCP-IP/build/Server/CMakeFiles/edit_cache.dir
+/home/andrey/worckSpace/LearnTCP-IP/build/Server/CMakeFiles/Server.dir
