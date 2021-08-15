@@ -7,6 +7,22 @@
 #IncludeRegexTransform: 
 
 /home/andrey/worckSpace/LearnTCP-IP/Server/serverMain.cpp
+serverMain.h
+/home/andrey/worckSpace/LearnTCP-IP/Server/serverMain.h
+
+/home/andrey/worckSpace/LearnTCP-IP/Server/serverMain.h
 iostream
+-
+sys/socket.h
+-
+sys/types.h
+-
+netinet/in.h
+-
+stdio.h
+-
+string.h
+-
+string
 -
 

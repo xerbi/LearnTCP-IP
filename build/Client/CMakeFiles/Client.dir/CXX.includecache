@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/andrey/worckSpace/LearnTCP-IP/Client/clientMain.cpp
+clientMain.h
+/home/andrey/worckSpace/LearnTCP-IP/Client/clientMain.h
+
+/home/andrey/worckSpace/LearnTCP-IP/Client/clientMain.h
 iostream
 -
 cstring

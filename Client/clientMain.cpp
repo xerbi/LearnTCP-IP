@@ -1,10 +1,4 @@
-#include <iostream>
-#include <cstring>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <stdio.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
+#include "clientMain.h"
 
 //create simple TCP-IP client
 /*
@@ -16,13 +10,15 @@ int main(int argc, char **argv)
 {
     std::cout << "This is client! \n";
 
-    short port = 5150;
-    char domain[] = "127.0.0.1";
-    char buffer[100];
-    strcpy(buffer, argv[1]);
+    const short size_buf = 100;
+    const short port = 5150;
+    const char domain[] = "127.0.0.1";
+
+    char buffer[size_buf];
+    strcpy(buffer, argv[1]); //copy text from argv
 
     //extern int socket (int __domain, int __type, int __protocol) __THROW;
-    int socket_c = socket(AF_INET, SOCK_SEQPACKET, 0); 
+    int socket_c = socket(AF_INET, SOCK_STREAM, 0); 
     if(socket_c < 0)
     {
         /* Print a message describing the meaning of the value of errno.
@@ -55,7 +51,7 @@ int main(int argc, char **argv)
     }
 
     //clear buffer
-    memset(buffer, 0, 100);
+    memset(buffer, 0, size_buf);
 
     //recv (int __fd, void *__buf, size_t __n, int __flags)
     int rc = recv(socket_c, buffer, sizeof(buffer), 0);
@@ -64,7 +60,8 @@ int main(int argc, char **argv)
         perror("Error receive!");
         exit(13);
     }
-    else printf("%c\n", buffer[100]);
+
+    else printf("%s \n", buffer);
     
     return 0;
 }
